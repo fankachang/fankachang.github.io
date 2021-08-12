@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable"  content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    
+    
+    <!--Simple SEO-->
+
+
+<meta name="robots" content=all />
+<meta name="google" content=all />
+<meta name="googlebot" content=all />
+<meta name="verify" content=all />
+    <!--Title-->
+
+<title>Docker-machine-parallels | 夏夜</title>
+
+<link rel="alternate" href="/atom.xml" title="夏夜" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/pages/post.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/thirdParty/highlight/github.css">
+<link rel="stylesheet" href="/.css">
+
+
+    <!--script-->
+
+
+
+
+
+    
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body id="normal">
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<style>
+    header{ top: 71px; position: absolute!important;}
+    #container{padding-top: 151px!important;}
+</style>
+<div style="position:fixed;z-index:9999;left:0;top:0;width:100%;height:70px;background-color:#e0e0e0;color:#396CA5;border-bottom:1px solid #cecece;text-align:center;line-height:70px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis">你使用的瀏覽器版本過低，為了你更好的閱讀體驗，請更新瀏覽器的版本或者使用其他現代瀏覽器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<div id="wrap">
+    <header  style="position: absolute;" >
+    <div id="site-meta">
+        <a href="/" id="logo">
+            <h1 class="title">夏夜</h1>
+        </a>
+        
+    </div>
+    <ul id="nav">
+        
+            <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
+        
+            <li><a href="/atom.xml"><i class="fa fa-rss"></i>RSS</a></li>
+        
+        <li id="search"><a href="javascript:void(0)"><i class="fa fa-search"></i>搜尋</a></li>
+    </ul>
+</header>
+
+    <div id="container">
+        
+<ul id="sidebar">
+    
+    
+<li class="widget widget-normal category">
+    <h3 class="fa fa-th widget-title">分類</h3>
+    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Docker/"><i class="fa" aria-hidden="true">Docker</i></a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/"><i class="fa" aria-hidden="true">Hexo</i></a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/%E5%A4%96%E6%8E%9B/"><i class="fa" aria-hidden="true">外掛</i></a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link current" href="/categories/MacApp/"><i class="fa" aria-hidden="true">MacApp</i></a><span class="category-list-count">1</span></li></ul>
+</li>
+
+
+    
+    
+<li class="widget widget-normal archive">
+  <h3 class="fa fa-archive widget-title">彙整</h3>
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/"><i class="fa" aria-hidden="true">August 2021</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/"><i class="fa" aria-hidden="true">May 2020</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/"><i class="fa" aria-hidden="true">December 2019</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/"><i class="fa" aria-hidden="true">November 2019</i></a><span class="archive-list-count">2</span></li></ul>
+</li>
+
+
+    
+    
+<li class="widget widget-normal tags">
+  <h3 class="fa fa-tags widget-title">標籤雲</h3>
+  <div class="tagcloud-content">
+    
+      <a href="/tags/Mabook/" style="font-size: 0.14rem; color: #69c">Mabook</a> <a href="/tags/App/" style="font-size: 0.14rem; color: #69c">App</a> <a href="/tags/Hexo/" style="font-size: 0.2rem; color: #0a407c">Hexo</a> <a href="/tags/category/" style="font-size: 0.14rem; color: #69c">category</a> <a href="/tags/Mermaid/" style="font-size: 0.17rem; color: #386da4">Mermaid</a> <a href="/tags/%E6%B5%81%E7%A8%8B%E5%9C%96/" style="font-size: 0.14rem; color: #69c">流程圖</a>
+  </div>
+</li>
+
+
+    
+</ul>
+
+
+        <div id="main">
+    <article id="post">
+        <div id="post-header">
+
+            <h1 id="Docker-machine-parallels">
+                
+                Docker-machine-parallels
+                
+            </h1>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>Docker</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            null
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2020/05/16</span>
+    </span>
+    
+    
+    
+</div>
+
+            
+            
+            <p class="fa fa-exclamation-triangle warning">
+                本文於<strong>453</strong>天之前發表，文中內容可能已經過時。如有疑問，請在評論區留言。
+            </p>
+            
+        </div>
+        
+        <div id="post-body">
+            <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><ul>
+<li><p>因 Docker on MAC 的 IO 會很慢的瓶頸，查資料大致可分為以下幾種解法：</p>
+<ol>
+<li>Disktop Tool 改使用 docker ce edge 版本</li>
+<li>改用 docker-machine-parallels</li>
+<li>使用 docker-sync 改善 IO</li>
+</ol>
+</li>
+<li><p>本次使用 edge 版本、Docker-machine-parallels 還有 NFS 掛載來加速可由 14s 縮減到 4s</p>
+</li>
+</ul>
+<h3 id="環境說明"><a href="#環境說明" class="headerlink" title="環境說明"></a>環境說明</h3><ul>
+<li>docker-machine 並不包含 client command （也就是 docker），所以仍需要安裝 Docker Edge CE Version</li>
+<li>檔案系統需要是大小寫區分才能編譯</li>
+<li>需要 Parallels Desktop Pro 版本才支援 docker-machine-parallels</li>
+<li>NFS 因 Macbook 本身有內建服務，所以採用本服務，但有搭配 docker-machine-nfs 套件進行設置</li>
+<li>架構概念<ul>
+<li>因為若直接用 docker -v volumeDir:containDir 掛載檔案系統（APFS）會有過慢的問題，所以volumeDir 是改成掛在 NFS Share Dir 下</li>
+<li>所以實際上掛載關係是：<ol>
+<li>docker container 掛載 Volume（nfsmount)</li>
+<li>Volume 透過 docker volume create 綁定到 NFS Share Dir</li>
+<li>NFS Service 將 APFS Dir 設定分享並指定連線權限（此部份由 docker-machine-nfs 協助）</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="安裝-Docker-Edge-CE-Version"><a href="#安裝-Docker-Edge-CE-Version" class="headerlink" title="安裝 Docker Edge CE Version"></a>安裝 Docker Edge CE Version</h3><p><a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-mac/edge-release-notes/">Docker Edge for Mac 官方下載點</a></p>
+<h3 id="Docker-machine-parallels-安裝"><a href="#Docker-machine-parallels-安裝" class="headerlink" title="Docker-machine-parallels 安裝"></a>Docker-machine-parallels 安裝</h3><ul>
+<li><p>安裝 docker-machine-parallels</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install docker-machine-parallels</span><br></pre></td></tr></table></figure></li>
+<li><p>建立 docker-parallels machine</p>
+<ul>
+<li><p>指令完成後會在 Parallels 生成一個叫做 prl-dev 的 Linux 核心的虛擬機  </p>
+</li>
+<li><p>指令： docker-machine create –driver=parallels prl-dev</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">docker-machine create --driver=parallels --engine-storage-driver=overlay2 --parallels-disk-size=120000  --parallels-cpu-count=8 --parallels-memory=32768 prl-dev</span><br><span class="line"></span><br><span class="line">Creating CA: /Users/fanka/.docker/machine/certs/ca.pem</span><br><span class="line">Creating client certificate: /Users/fanka/.docker/machine/certs/cert.pem</span><br><span class="line">Running pre-create checks...</span><br><span class="line">(prl-dev) Image cache directory does not exist, creating it at /Users/fanka/.docker/machine/cache...</span><br><span class="line">(prl-dev) No default Boot2Docker ISO found locally, downloading the latest release...</span><br><span class="line">(prl-dev) Latest release <span class="keyword">for</span> github.com/boot2docker/boot2docker is v19.03.5</span><br><span class="line">(prl-dev) Downloading /Users/fanka/.docker/machine/cache/boot2docker.iso from https://github.com/boot2docker/boot2docker/releases/download/v19.03.5/boot2docker.iso...</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>關閉後調整系統資源（CPU, Ram）</p>
+<ul>
+<li><p>因預設只會給 1 顆 CPU, 4G Ram 的資源，所以需要關閉後進行調整（有提供參數，但是使用後都說不支援，所以改用手動）</p>
+</li>
+<li><p>指令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//調整前重起虛擬機</span><br><span class="line">docker-machine stop prl-dev</span><br><span class="line"></span><br><span class="line">//調整後重起虛擬機</span><br><span class="line">docker-machine start prl-dev</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>取得 docker 環境</p>
+<ul>
+<li>需要執行以下指令將環境變數載入<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker-machine env prl-dev</span><br><span class="line"><span class="built_in">eval</span> $(docker-machine env prl-dev)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>載入 Image</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ImageName.tar | docker import - ImageName</span><br></pre></td></tr></table></figure></li>
+<li><p>後需都會以 root 權限載跑，不影響 host 主機處理（看到的都是本機用戶權限，跳過不管）</p>
+</li>
+</ul>
+<h3 id="NFS-Volume-設定"><a href="#NFS-Volume-設定" class="headerlink" title="NFS Volume 設定"></a>NFS Volume 設定</h3><ul>
+<li><p>安裝模組</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install docker-machine-nfs</span><br></pre></td></tr></table></figure></li>
+<li><p>建立 NFS 分享節點（prl-dev 是 docker-machine 名稱）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">docker-machine-nfs prl-dev --shared-folder=/System/Volumes/Data/Users/fanka/ProjectWorkDir</span><br><span class="line">[INFO] Configuration:</span><br><span class="line"></span><br><span class="line">  - Machine Name: prl-dev</span><br><span class="line">  - Shared Folder: /Users/fanka/ProjectWorkDir</span><br><span class="line">  - Mount Options: noacl,async,nfsvers=3</span><br><span class="line">  - Force: <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">[INFO] machine presence ... OK</span><br><span class="line">[INFO] machine running ... OK</span><br><span class="line">[INFO] Lookup mandatory properties ... OK</span><br><span class="line"></span><br><span class="line">NFS already mounted.</span><br><span class="line"></span><br><span class="line">--------------------------------------------</span><br><span class="line"></span><br><span class="line">The docker-machine <span class="string">&#x27;prl-dev&#x27;</span></span><br><span class="line">is now mounted with NFS!</span><br><span class="line"></span><br><span class="line">ENJOY high speed mounts :D</span><br><span class="line"></span><br><span class="line">--------------------------------------------</span><br></pre></td></tr></table></figure></li>
+<li><p>將 NFS 分享節點設定成 Volume 以給 Container 掛載</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">docker volume rm nfsmount</span><br><span class="line">docker volume create --driver <span class="built_in">local</span> \</span><br><span class="line">--opt <span class="built_in">type</span>=nfs --opt o=addr=10.211.55.2,rw,nolock,noacl,async,nfsvers=3 \</span><br><span class="line">--opt device=:/Users/fanka/Project/ProjectWorkDir nfsmount</span><br><span class="line"></span><br><span class="line">docker volume inspect nfsmount</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker volume rm nfsvsm</span><br><span class="line">docker volume create --driver <span class="built_in">local</span> \</span><br><span class="line">--opt <span class="built_in">type</span>=nfs --opt o=addr=10.211.55.2,rw,nolock,noacl,async,nfsvers=3 \</span><br><span class="line">--opt device=:/Users/fanka/Project/ProjectWorkDir2 nfsvsm</span><br><span class="line"></span><br><span class="line">docker volume inspect nfsvsm</span><br></pre></td></tr></table></figure></li>
+<li><p>建立 Container</p>
+<ul>
+<li><p>指定 登入用戶 ID</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -itd --name=ProjectNameDev -v nfsmount:/home/userid/ProjectWorkDir --privileged=<span class="literal">true</span> -u 1000:1000 ImageName:latest bash</span><br></pre></td></tr></table></figure></li>
+<li><p>不指定 登入用戶 ID</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -itd --name=ProjectNameDev -v nfsmount:/home/userid/ProjectWorkDir --privileged=<span class="literal">true</span> ImageName:latest bash</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>進入 Container（19 是 Container ID）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -u 1000:1000 -it 19 bash</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="測試讀寫速度"><a href="#測試讀寫速度" class="headerlink" title="測試讀寫速度"></a>測試讀寫速度</h3><ul>
+<li><p>測試用指令：</p>
+<ol>
+<li>測試磁碟的IO寫速度： time dd if=/dev/zero of=test.dbf bs=8k count=300000</li>
+<li>測試磁碟的IO讀速度： time dd if=test.dbf bs=8k count=300000 of=/dev/null</li>
+</ol>
+</li>
+<li><p>Container With Volume （ Host 目錄 掛載成 Container 內的目錄）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">userid@a568c6f08902:~/ProjectWorkDir$ time dd <span class="keyword">if</span>=/dev/zero of=test.dbf bs=8k count=300000</span><br><span class="line">300000+0 records <span class="keyword">in</span></span><br><span class="line">300000+0 records out</span><br><span class="line">2457600000 bytes (2.5 GB) copied, 14.7852 s, 166 MB/s</span><br><span class="line"></span><br><span class="line">real  0m14.880s</span><br><span class="line">user  0m0.510s</span><br><span class="line">sys   0m7.852s</span><br><span class="line">userid@a568c6f08902:~/ProjectWorkDir$</span><br></pre></td></tr></table></figure></li>
+<li><p>Container With NFS</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">userid@f8d45c431341:~/ProjectWorkDir$ time dd <span class="keyword">if</span>=/dev/zero of=test.dbf bs=8k count=300000</span><br><span class="line">300000+0 records <span class="keyword">in</span></span><br><span class="line">300000+0 records out</span><br><span class="line">2457600000 bytes (2.5 GB) copied, 4.16525 s, 590 MB/s</span><br><span class="line"></span><br><span class="line">real  0m4.263s</span><br><span class="line">user  0m0.283s</span><br><span class="line">sys   0m1.860s</span><br><span class="line">userid@f8d45c431341:~/ProjectWorkDir$</span><br></pre></td></tr></table></figure></li>
+<li><p>Macbook APFS</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[20:09:14] fanka@FankaMBP16 ~/ProjectWorkDir %&gt;time dd <span class="keyword">if</span>=/dev/zero of=test.dbf bs=8k count=300000</span><br><span class="line">300000+0 records <span class="keyword">in</span></span><br><span class="line">300000+0 records out</span><br><span class="line">2457600000 bytes transferred <span class="keyword">in</span> 1.726226 secs (1423683730 bytes/sec)</span><br><span class="line">dd <span class="keyword">if</span>=/dev/zero of=test.dbf bs=8k count=300000  0.15s user 1.51s system 92% cpu 1.788 total</span><br></pre></td></tr></table></figure></li>
+<li><p>Parallels</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">UserID@vmName:~$ time dd <span class="keyword">if</span>=/dev/zero of=test.dbf bs=8k count=300000</span><br><span class="line">300000+0 records <span class="keyword">in</span></span><br><span class="line">300000+0 records out</span><br><span class="line">2457600000 bytes (2.5 GB, 2.3 GiB) copied, 2.23421 s, 1.1 GB/s</span><br><span class="line"></span><br><span class="line">real  0m2.237s</span><br><span class="line">user  0m0.081s</span><br><span class="line">sys 0m2.055s</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>結論： Macbook APFS（1.788s, 1.4GB/S ）&lt;  Parallels (2.237s, 1.1GB/S) &lt; Container With NFS （4.263s, 590MB/s） &lt;  Container With Volume (14.880, 166 MB/s)</p>
+
+        </div>
+        <div id="post-footer">
+            <div class="avatar" >
+                <img src="http://fankachang.github.io/author.png" alt="avatar"/>
+                
+                
+            </div>
+            <ul class="author-profile-section">
+                <li>
+                  
+                  作者:
+                  
+                    
+                    <a href="/">Fanka</a>
+                </li>
+                
+                <li>發表日期: <span>2020-05-16  10:33:00</span></li>
+                
+                <li>最後編輯日期: <span>2021-08-12  12:49:22</span></li>
+                
+                <li class="post-category">
+                    文章分類:
+                    
+                    <a href="/categories/Docker/">Docker</a>
+                    
+                </li>
+                <li class="post-tags">
+                    文章標簽:
+                    
+                </li>
+                
+                <li> 版權聲明: <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">
+知識共享署名-非商業性使用-禁止演繹 3.0 未本地化版本許可協議（CC BY-NC-ND 3.0）
+</a></li>
+                
+            </ul>
+            <div id="donate-wrap">
+                
+                
+                
+                <img src="" alt="" class="donate-img">
+                
+                <img src="" alt="" class="donate-img">
+                
+                
+            </div>
+        </div>
+    </article>
+    <div class="article-nav">
+        
+        <a href="/2021/08/12/MacApp/RamDisk/" class="pre-post fa fa-caret-left">RamDisk On Macbook</a>
+        
+        
+        <a href="/2020/05/07/Docker/Docker_Sync/" class="next-post fa">Docker-sync</a>
+        
+    </div>
+    
+    <div id="comments">
+        
+
+<script>
+  gitalk.render("comments");
+</script>
+
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+    <footer id="footer">
+    
+    <div>
+        
+        <a href="/" class="copyright-links">Fanka</a>&copy;2021 - 2021.All Rights
+        Reserved.
+    </div>
+    <p>Powered by <a href="https://hexo.io" class="copyright-links" target="_blank">Hexo</a> | Theme by <a
+                href="https://github.com/GeekaholicLin" class="copyright-links" target="_blank">GeekaholicLin</a>
+    </p>
+    
+</footer>
+
+</div>
+    <ul id="tools">
+    <li class="totop-btn fa fa-angle-up"></li>
+    <li class="exchange-btn fa fa-exchange"></li>
+  
+    <li class="toc-btn fa fa-list-ul"></li>
+    
+    
+
+    
+</ul>
+<p id="process"></p>
+<div id="search-overlay">
+    <div class="search-area-wrap">
+        <div id="search-area">
+            <div class="input-wrap focus">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input id="search-input" autofocus autocomplete="off" type="text"
+                       placeholder="search this website..."/>
+            </div>
+            <ul id="search-result">
+                <li class="load-first"><i class="fa fa-spinner fa-pulse"></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%B7%E5%9B%A0"><span class="toc-number">1.</span> <span class="toc-text">起因</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%92%B0%E5%A2%83%E8%AA%AA%E6%98%8E"><span class="toc-number">1.1.</span> <span class="toc-text">環境說明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%9D-Docker-Edge-CE-Version"><span class="toc-number">1.2.</span> <span class="toc-text">安裝 Docker Edge CE Version</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Docker-machine-parallels-%E5%AE%89%E8%A3%9D"><span class="toc-number">1.3.</span> <span class="toc-text">Docker-machine-parallels 安裝</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NFS-Volume-%E8%A8%AD%E5%AE%9A"><span class="toc-number">1.4.</span> <span class="toc-text">NFS Volume 設定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%AC%E8%A9%A6%E8%AE%80%E5%AF%AB%E9%80%9F%E5%BA%A6"><span class="toc-number">1.5.</span> <span class="toc-text">測試讀寫速度</span></a></li></ol></li></ol>
+
+
+
+
+
+<script src="/js/search.js"></script>
+
+<script type="text/javascript">
+    //theme config datas
+    var copyrightObj = {};
+    copyrightObj.enable = 'true';
+    copyrightObj.triggerCopyLength = '200';
+    copyrightObj.appendText = '商业转载请联系作者获得授权,非商业转载请注明出处 © example';
+    var leancloudObj = {};
+    leancloudObj.enable = 'false';
+    leancloudObj.className = 'BlogCounter';
+    leancloudObj.limits = '10';
+</script>
+<script type="text/javascript">
+    var search = {};
+    var search_path = "search.xml";
+    if (!search_path) {
+        search_path = "search.xml";
+    }
+    search.path = "/" + search_path;
+    search.func =  _ajax.init();
+</script>
+
+<script src="/js/app.js"></script>
+
+
+<script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script>
+<script>
+    if (window.mermaid) {
+    mermaid.initialize({theme: 'forest'});
+    }
+</script>
+
+
+</body>
+</html>

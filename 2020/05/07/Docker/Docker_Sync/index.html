@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable"  content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    
+    
+    <!--Simple SEO-->
+
+
+<meta name="robots" content=all />
+<meta name="google" content=all />
+<meta name="googlebot" content=all />
+<meta name="verify" content=all />
+    <!--Title-->
+
+<title>Docker-sync | 夏夜</title>
+
+<link rel="alternate" href="/atom.xml" title="夏夜" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/pages/post.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/thirdParty/highlight/github.css">
+<link rel="stylesheet" href="/.css">
+
+
+    <!--script-->
+
+
+
+
+
+    
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body id="normal">
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<style>
+    header{ top: 71px; position: absolute!important;}
+    #container{padding-top: 151px!important;}
+</style>
+<div style="position:fixed;z-index:9999;left:0;top:0;width:100%;height:70px;background-color:#e0e0e0;color:#396CA5;border-bottom:1px solid #cecece;text-align:center;line-height:70px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis">你使用的瀏覽器版本過低，為了你更好的閱讀體驗，請更新瀏覽器的版本或者使用其他現代瀏覽器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<div id="wrap">
+    <header  style="position: absolute;" >
+    <div id="site-meta">
+        <a href="/" id="logo">
+            <h1 class="title">夏夜</h1>
+        </a>
+        
+    </div>
+    <ul id="nav">
+        
+            <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
+        
+            <li><a href="/atom.xml"><i class="fa fa-rss"></i>RSS</a></li>
+        
+        <li id="search"><a href="javascript:void(0)"><i class="fa fa-search"></i>搜尋</a></li>
+    </ul>
+</header>
+
+    <div id="container">
+        
+<ul id="sidebar">
+    
+    
+<li class="widget widget-normal category">
+    <h3 class="fa fa-th widget-title">分類</h3>
+    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Docker/"><i class="fa" aria-hidden="true">Docker</i></a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/"><i class="fa" aria-hidden="true">Hexo</i></a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/%E5%A4%96%E6%8E%9B/"><i class="fa" aria-hidden="true">外掛</i></a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link current" href="/categories/MacApp/"><i class="fa" aria-hidden="true">MacApp</i></a><span class="category-list-count">1</span></li></ul>
+</li>
+
+
+    
+    
+<li class="widget widget-normal archive">
+  <h3 class="fa fa-archive widget-title">彙整</h3>
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/"><i class="fa" aria-hidden="true">August 2021</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/"><i class="fa" aria-hidden="true">May 2020</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/"><i class="fa" aria-hidden="true">December 2019</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/"><i class="fa" aria-hidden="true">November 2019</i></a><span class="archive-list-count">2</span></li></ul>
+</li>
+
+
+    
+    
+<li class="widget widget-normal tags">
+  <h3 class="fa fa-tags widget-title">標籤雲</h3>
+  <div class="tagcloud-content">
+    
+      <a href="/tags/Mabook/" style="font-size: 0.14rem; color: #69c">Mabook</a> <a href="/tags/App/" style="font-size: 0.14rem; color: #69c">App</a> <a href="/tags/Hexo/" style="font-size: 0.2rem; color: #0a407c">Hexo</a> <a href="/tags/category/" style="font-size: 0.14rem; color: #69c">category</a> <a href="/tags/Mermaid/" style="font-size: 0.17rem; color: #386da4">Mermaid</a> <a href="/tags/%E6%B5%81%E7%A8%8B%E5%9C%96/" style="font-size: 0.14rem; color: #69c">流程圖</a>
+  </div>
+</li>
+
+
+    
+</ul>
+
+
+        <div id="main">
+    <article id="post">
+        <div id="post-header">
+
+            <h1 id="Docker-sync">
+                
+                Docker-sync
+                
+            </h1>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>Docker</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            null
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2020/05/07</span>
+    </span>
+    
+    
+    
+</div>
+
+            
+            
+            <p class="fa fa-exclamation-triangle warning">
+                本文於<strong>461</strong>天之前發表，文中內容可能已經過時。如有疑問，請在評論區留言。
+            </p>
+            
+        </div>
+        
+        <div id="post-body">
+            <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><ul>
+<li><p>因 Docker on MAC 的 IO 會很慢的瓶頸，查資料大致可分為以下幾種解法：</p>
+<ol>
+<li>Disktop Tool 改使用 docker ce edge 版本</li>
+<li>改用 Docker-machine-parallels</li>
+<li>推薦使用 docker-sync 改善 IO</li>
+</ol>
+</li>
+</ul>
+<h2 id="docker-sync-測試"><a href="#docker-sync-測試" class="headerlink" title="docker-sync 測試"></a>docker-sync 測試</h2><ul>
+<li><p>安裝 docker-sync</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">gem install docker-sync</span><br><span class="line">brew install unison</span><br><span class="line">brew install eugenmayer/dockersync/unox</span><br><span class="line">brew install fswatch</span><br></pre></td></tr></table></figure></li>
+<li><p>編寫同步 yml 檔案</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">version: <span class="string">&#x27;2&#x27;</span></span><br><span class="line">syncs:</span><br><span class="line">  ProjectName-Sync:</span><br><span class="line">    src: <span class="string">&#x27;.&#x27;</span></span><br><span class="line">    sync_strategy: native_osx</span><br><span class="line">    sync_userid: 1000</span><br></pre></td></tr></table></figure></li>
+<li><p>啟動 docker-sync</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">fanka@FankaMBP ~/ProjectName %&gt;docker-sync start</span><br><span class="line">      ok  Starting native_osx <span class="keyword">for</span> sync ProjectName-Sync</span><br><span class="line">  Unable to find image <span class="string">&#x27;eugenmayer/unison:2.51.2.1&#x27;</span> locally</span><br><span class="line">  2.51.2.1: Pulling from eugenmayer/unison</span><br><span class="line">  1eae7a7426b0: Pull complete</span><br><span class="line">  3aa35cd67672: Pull complete</span><br><span class="line">  0b90242c76a3: Pull complete</span><br><span class="line">  8bf04f18c959: Pull complete</span><br><span class="line">  dda7831d2dcd: Pull complete</span><br><span class="line">  060e04f93ee5: Pull complete</span><br><span class="line">  0a64e8572226: Pull complete</span><br><span class="line">  3ca3985a9426: Pull complete</span><br><span class="line">  Digest: sha256:636559840565e7c6358d11b6a0ece9241f5ad476dc5c4b61af52be25ce3a3419</span><br><span class="line">  Status: Downloaded newer image <span class="keyword">for</span> eugenmayer/unison:2.51.2.1</span><br><span class="line">  doing initial sync with unison</span><br><span class="line">  Unison 2.51.2 (ocaml 4.06.1): Contacting server...</span><br><span class="line">  Looking <span class="keyword">for</span> changes</span><br><span class="line">  Reconciling changes</span><br><span class="line">  Propagating updates</span><br><span class="line">  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 15:40:17.91 on 07 May 2020</span><br><span class="line">  [BGN] Copying ProjectName from /host_sync to /app_sync</span><br><span class="line">  Failed: Error <span class="keyword">in</span> copying locally:</span><br><span class="line">  /host_sync/ProjectName/lagvm_p/.DS_Store: No such file or directory</span><br><span class="line">  [BGN] Copying .DS_Store from /host_sync to /app_sync</span><br><span class="line">  [END] Copying .DS_Store</span><br><span class="line">  [BGN] Copying .docker-sync from /host_sync to /app_sync</span><br><span class="line">  [END] Copying .docker-sync</span><br><span class="line">  [BGN] Copying build_la.sh from /host_sync to /app_sync</span><br><span class="line">  [END] Copying build_la.sh</span><br><span class="line">  [BGN] Copying build_qnx.sh from /host_sync to /app_sync</span><br><span class="line">  [END] Copying build_qnx.sh</span><br><span class="line">  [BGN] Copying docker-sync.yml from /host_sync to /app_sync</span><br><span class="line">  [END] Copying docker-sync.yml</span><br><span class="line">  [BGN] Copying upla.sh from /host_sync to /app_sync</span><br><span class="line">  [END] Copying upla.sh</span><br><span class="line">  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 16:03:26.37 on 07 May 2020</span><br><span class="line">  Saving synchronizer state</span><br><span class="line">  Synchronization incomplete at 16:03:26  (6 items transferred, 0 skipped, 1 failed)</span><br><span class="line">    failed: ProjectName</span><br><span class="line">  real	1h 37m 18s</span><br><span class="line">  user	7m 39.82s</span><br><span class="line">  sys	7m 16.35s</span><br><span class="line">  chown ing file to uid 1000</span><br><span class="line">  b9040330be0b548ad7a2a5b02dc9a6e9da38100bd6bd5409b5601fe1109361ef</span><br><span class="line">      success  Sync container started</span><br><span class="line">      success  Starting Docker-Sync <span class="keyword">in</span> the background</span><br><span class="line">fanka@FankaMBP ~/ProjectName %&gt;ls</span><br></pre></td></tr></table></figure></li>
+<li><p>掛載 share volume 到 Container</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -itd --name=ContainerName -v ProjectName-Sync:/home/UserID/ProjectName DockerImageName:latest bash</span><br></pre></td></tr></table></figure></li>
+<li><p>確認 掛載目錄是否有資料（ 72 is Container ID）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fanka@FankaMBP ~ %&gt;docker <span class="built_in">exec</span> -it 72 ls /home/UserID/ProjectName                                                                                                                                                [16:17:54]</span><br><span class="line">build_1.sh  docker-sync.yml				 run.sh</span><br><span class="line">build_2.sh  ProjectName</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+        </div>
+        <div id="post-footer">
+            <div class="avatar" >
+                <img src="http://fankachang.github.io/author.png" alt="avatar"/>
+                
+                
+            </div>
+            <ul class="author-profile-section">
+                <li>
+                  
+                  作者:
+                  
+                    
+                    <a href="/">Fanka</a>
+                </li>
+                
+                <li>發表日期: <span>2020-05-07  13:33:00</span></li>
+                
+                <li>最後編輯日期: <span>2021-08-12  12:49:22</span></li>
+                
+                <li class="post-category">
+                    文章分類:
+                    
+                    <a href="/categories/Docker/">Docker</a>
+                    
+                </li>
+                <li class="post-tags">
+                    文章標簽:
+                    
+                </li>
+                
+                <li> 版權聲明: <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">
+知識共享署名-非商業性使用-禁止演繹 3.0 未本地化版本許可協議（CC BY-NC-ND 3.0）
+</a></li>
+                
+            </ul>
+            <div id="donate-wrap">
+                
+                
+                
+                <img src="" alt="" class="donate-img">
+                
+                <img src="" alt="" class="donate-img">
+                
+                
+            </div>
+        </div>
+    </article>
+    <div class="article-nav">
+        
+        <a href="/2020/05/16/Docker/Docker_Machine/" class="pre-post fa fa-caret-left">Docker-machine-parallels</a>
+        
+        
+        <a href="/2019/12/09/Hexo/%E5%A4%96%E6%8E%9B/hexo_mermaid_flowchart/" class="next-post fa">Flowchart(流程圖)</a>
+        
+    </div>
+    
+    <div id="comments">
+        
+
+<script>
+  gitalk.render("comments");
+</script>
+
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+    <footer id="footer">
+    
+    <div>
+        
+        <a href="/" class="copyright-links">Fanka</a>&copy;2021 - 2021.All Rights
+        Reserved.
+    </div>
+    <p>Powered by <a href="https://hexo.io" class="copyright-links" target="_blank">Hexo</a> | Theme by <a
+                href="https://github.com/GeekaholicLin" class="copyright-links" target="_blank">GeekaholicLin</a>
+    </p>
+    
+</footer>
+
+</div>
+    <ul id="tools">
+    <li class="totop-btn fa fa-angle-up"></li>
+    <li class="exchange-btn fa fa-exchange"></li>
+  
+    <li class="toc-btn fa fa-list-ul"></li>
+    
+    
+
+    
+</ul>
+<p id="process"></p>
+<div id="search-overlay">
+    <div class="search-area-wrap">
+        <div id="search-area">
+            <div class="input-wrap focus">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input id="search-input" autofocus autocomplete="off" type="text"
+                       placeholder="search this website..."/>
+            </div>
+            <ul id="search-result">
+                <li class="load-first"><i class="fa fa-spinner fa-pulse"></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%B7%E5%9B%A0"><span class="toc-number">1.</span> <span class="toc-text">起因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker-sync-%E6%B8%AC%E8%A9%A6"><span class="toc-number">2.</span> <span class="toc-text">docker-sync 測試</span></a></li></ol>
+
+
+
+
+
+<script src="/js/search.js"></script>
+
+<script type="text/javascript">
+    //theme config datas
+    var copyrightObj = {};
+    copyrightObj.enable = 'true';
+    copyrightObj.triggerCopyLength = '200';
+    copyrightObj.appendText = '商业转载请联系作者获得授权,非商业转载请注明出处 © example';
+    var leancloudObj = {};
+    leancloudObj.enable = 'false';
+    leancloudObj.className = 'BlogCounter';
+    leancloudObj.limits = '10';
+</script>
+<script type="text/javascript">
+    var search = {};
+    var search_path = "search.xml";
+    if (!search_path) {
+        search_path = "search.xml";
+    }
+    search.path = "/" + search_path;
+    search.func =  _ajax.init();
+</script>
+
+<script src="/js/app.js"></script>
+
+
+<script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script>
+<script>
+    if (window.mermaid) {
+    mermaid.initialize({theme: 'forest'});
+    }
+</script>
+
+
+</body>
+</html>
